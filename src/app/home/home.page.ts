@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Geolocation, Geoposition } from '@ionic-native/geolocation/ngx';
+import { AgmCoreModule } from '@agm/core';
 
 @Component({
   selector: 'app-home',
