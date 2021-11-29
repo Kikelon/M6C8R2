@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Geolocation, Geoposition } from '@ionic-native/geolocation/ngx';
-import { AgmCoreModule } from '@agm/core';
 
 @Component({
   selector: 'app-home',
@@ -38,7 +37,7 @@ export class HomePage {
     let watch = this.geolocation.watchPosition();
     watch.subscribe((data: Geoposition) => {
       this.latitudObservable = data.coords.latitude;
-      this.longitudPromesa = data.coords.longitude;
+      this.longitudObservable = data.coords.longitude;
     });
   }
 }
