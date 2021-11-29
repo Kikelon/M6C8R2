@@ -37,7 +37,7 @@ export class HomePage {
     let watch = this.geolocation.watchPosition();
     watch.subscribe((data: Geoposition) => {
       this.latitudObservable = data.coords.latitude;
-      this.longitudPromesa = data.coords.longitude;
+      this.longitudObservable = data.coords.longitude;
     });
   }
 }
