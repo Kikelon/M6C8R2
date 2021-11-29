@@ -1,0 +1,7 @@
+{
+  "name": "appGeoloc",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
